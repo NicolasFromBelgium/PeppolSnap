@@ -21,3 +21,59 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+# Laravel / PHP
+vendor/
+node_modules/
+.env
+.env.*
+.php_cs.cache
+composer.lock   # optionnel : si tu veux forcer composer update à chaque clone, supprime cette ligne
+storage/logs/*
+bootstrap/cache/*
+public/hot
+public/storage   # symlink souvent créé par storage:link
+
+# Laravel DB locales (SQLite par défaut)
+database/database.sqlite
+*.sqlite
+
+# Flutter (dans mobile/)
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/Runner/GeneratedPluginRegistrant.*
+
+# Flutter Android/iOS builds
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/ios/Flutter/App.framework
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Runner.xcworkspace/
+mobile/ios/Pods/
+mobile/ios/Podfile.lock
+
+# Général
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.idea/          # PhpStorm / Android Studio
+.vscode/        # VS Code
+*.sublime-*
+coverage/       # tests coverage
+tests/_output/  # Codeception si tu utilises
+
+# Tests
+*.json.tmp
+response.json
+final.json
+*.xml.bak
